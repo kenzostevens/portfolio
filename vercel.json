@@ -1,0 +1,26 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "cleanUrls": true,
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "/portfolio.pdf",
+      "permanent": false
+    }
+  ],
+  "headers": [
+    {
+      "source": "/portfolio.pdf",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/pdf"
+        },
+        {
+          "key": "Content-Disposition",
+          "value": "inline; filename=\"kenzo-stevens-website-portfolio.pdf\""
+        }
+      ]
+    }
+  ]
+}
